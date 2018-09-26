@@ -6,6 +6,7 @@ import android.os.Parcelable;
 import com.michaelflisar.changelog.tags.ChangelogTagBugfix;
 import com.michaelflisar.changelog.tags.ChangelogTagInfo;
 import com.michaelflisar.changelog.tags.ChangelogTagNew;
+import com.michaelflisar.changelog.tags.ChangelogTagProVersion;
 import com.michaelflisar.changelog.tags.IChangelogTag;
 
 /**
@@ -29,8 +30,10 @@ public class ImportanceChangelogSorter implements IChangelogSorter {
             return 1;
         } else if (tag instanceof ChangelogTagBugfix) {
             return 2;
-        } else {
+        } else if (tag instanceof ChangelogTagProVersion) {
             return 3;
+        } else {
+            return 4;
         }
     }
 

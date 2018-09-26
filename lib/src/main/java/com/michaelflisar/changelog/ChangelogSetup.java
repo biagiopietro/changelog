@@ -3,6 +3,7 @@ package com.michaelflisar.changelog;
 import com.michaelflisar.changelog.tags.ChangelogTagBugfix;
 import com.michaelflisar.changelog.tags.ChangelogTagInfo;
 import com.michaelflisar.changelog.tags.ChangelogTagNew;
+import com.michaelflisar.changelog.tags.ChangelogTagProVersion;
 import com.michaelflisar.changelog.tags.IChangelogTag;
 
 import java.util.HashSet;
@@ -22,6 +23,7 @@ public class ChangelogSetup {
         mValidTags.add(new ChangelogTagInfo());
         mValidTags.add(new ChangelogTagNew());
         mValidTags.add(new ChangelogTagBugfix());
+        mValidTags.add(new ChangelogTagProVersion());
     }
 
     public static ChangelogSetup get() {
