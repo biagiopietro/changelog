@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion setup.compileSdk
-    buildToolsVersion setup.buildTools
+    buildToolsVersion '28.0.2'
     dataBinding.enabled = setup.enableDataBinding
 
     defaultConfig {

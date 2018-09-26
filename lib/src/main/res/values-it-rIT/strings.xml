@@ -1,0 +1,13 @@
+<resources>
+
+    <string name ="changelog_bullet" translatable="false">\u2022\u00A0</string><!-- bullet + space -->
+
+    <string name ="changelog_dialog_title">Changelog %1$s</string>
+    <string name ="changelog_dialog_button">Ok</string>
+    <string name ="changelog_dialog_rate">Valuta questa app</string>
+    <string name ="changelog_version_title">%1$s</string>
+    <string name ="changelog_bug_prefix">[font color="#FF0000"][b]Bug risolt: [/b][/font]</string>
+    <string name ="changelog_bug_improvement">[font color="#009933"][b]Nuovo: [/b][/font]</string>
+    <string name ="changelog_pro_version">[font color="#1535d4"][b]Version pro: [/b][/font]</string>
+
+</resources>
