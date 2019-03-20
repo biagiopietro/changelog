@@ -8,6 +8,6 @@
     <string name ="changelog_version_title">%1$s</string>
     <string name ="changelog_bug_prefix">[font color="#FF0000"][b]Bug risolti: [/b][/font]</string>
     <string name ="changelog_bug_improvement">[font color="#009933"][b]Nuovo: [/b][/font]</string>
-    <string name ="changelog_pro_version">[font color="#1535d4"][b]Versione PRO: [/b][/font]</string>
+    <string name ="changelog_pro_version">[font color="#03A9F4"][b]Versione PRO: [/b][/font]</string>
 
 </resources>

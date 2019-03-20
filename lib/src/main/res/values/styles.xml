@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ChangelogDialogDarkTheme" parent="@style/Theme.AppCompat.Dialog">
+    <style name="ChangelogDialogDarkTheme" parent="android:Theme.DeviceDefault.Dialog">
         <item name="android:windowNoTitle">false</item>
     </style>
 
-    <style name="ChangelogDialogLightTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+    <style name="ChangelogDialogLightTheme" parent="android:Theme.DeviceDefault.Light.Dialog">
         <item name="android:windowNoTitle">false</item>
     </style>
 

@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements IChangelogRateHan
             builder.withRateButton(true);
         }
         if (showAsDialog) {
-            builder.buildAndShowDialog(this, false);
+            builder.buildAndShowDialog(this, true);
         } else {
             builder.buildAndStartActivity(this, true);
         }

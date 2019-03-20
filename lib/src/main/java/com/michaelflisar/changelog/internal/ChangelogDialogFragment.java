@@ -23,9 +23,11 @@ import com.michaelflisar.changelog.classes.IChangelogRateHandler;
 
 public class ChangelogDialogFragment extends DialogFragment {
 
+    private static boolean darkTheme = false;
     public static ChangelogDialogFragment create(ChangelogBuilder changelogBuilder, boolean darkTheme) {
         Bundle args = new Bundle();
         args.putParcelable("builder", changelogBuilder);
+        ChangelogDialogFragment.darkTheme = darkTheme;
         ChangelogDialogFragment dlg = new ChangelogDialogFragment();
         dlg.setStyle(DialogFragment.STYLE_NORMAL, darkTheme ? R.style.ChangelogDialogDarkTheme : R.style.ChangelogDialogLightTheme);
         dlg.setArguments(args);
@@ -43,7 +45,8 @@ public class ChangelogDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+        int theme = (darkTheme) ? R.style.ChangelogDialogDarkTheme : R.style.ChangelogDialogLightTheme;
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), theme)
                 .setTitle(getContext().getString(R.string.changelog_dialog_title, ChangelogUtil.getAppVersionName(getContext())))
                 .setPositiveButton(getContext().getString(R.string.changelog_dialog_button), new DialogInterface.OnClickListener() {
                     @Override
